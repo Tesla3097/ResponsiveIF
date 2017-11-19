@@ -1,0 +1,114 @@
+@charset "UTF-8" ;
+
+/* タブレット */
+@media screen and (max-width:750px) {
+	
+	#wrapper {
+		width: 100%;
+		margin:0 auto;	
+		padding: 10px;
+		
+	}
+	
+	#header .inner {
+		width: 100%;
+	}
+	
+	#header .logo, #header.fixed .logo {
+		position: absolute;
+		left: 10px;
+		bottom: 10px;
+		font-size: 26px;
+	}
+	
+	#global-nav {
+		position: absolute;
+		width: 60%;
+		height: 100%
+		padding: 10px 0;
+		text-align: center;
+		background: #333;
+		left: -1000px;
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+		filter:alpha(opacity=80);
+		-moz-opacity: 0.8;
+		opacity: 0.8;
+	}
+	
+	#global-nav ul {
+		position: static;
+	}
+	
+	#global-nav ul li {
+		width: 100%;
+		float: none;
+		border-right: none;
+	}
+	
+	#header #global-nav ul li a, #header.fixed #global-nav ul li a {
+		padding: 10px 0;
+		color: #FFF;
+	}
+	
+	#nav-toggle {
+		display: block;
+	}
+	
+	/* #nav-toggle 切り替えアニメーション */
+	.open #nav-toggle span:nth-child(1) {
+		top: 7px;
+		-webkit-transform: rotate(315deg);
+		-moz-transform: rotate(315deg);
+		transform: rotate(315deg);
+	}
+	.open #nav-toggle span:nth-child(2) {
+		width: 0;
+		left: 50%;
+	}
+	.open #nav-toggle span:nth-child(3) {
+		top: 7px;
+		-webkit-transform: rotate(-315deg);
+		-moz-transform: rotate(-315deg);
+		transform: rotate(-315deg);
+	}
+	
+	/* #global-nav スライドアニメーション */
+	.open #global-nav {
+		/* #global-nav top + #mobile-head height */
+		-moz-transform: translateX(1000px);
+		-webkit-transform: translateX(1000px);
+		transform: translateX(1000px);
+	}
+
+	#contents-menu ul.cols-2 li ,#contents-menu ul.cols-3 li ,#contents-menu ul.cols-4 li {
+		width: 100%;
+		transition:none;
+	}
+	
+	p {
+		color:#369;
+	}	
+	
+
+}
+
+/* スマホ */
+@media screen and (max-width:718px) {
+	
+	ul[class*='cols-'] > li{
+      width: 100%;/*すべてを１列に*/
+  }
+
+	p {
+		color:#f00 ;
+	}
+	
+}
+
+
+
+
+
+
