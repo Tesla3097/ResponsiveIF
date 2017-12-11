@@ -1,23 +1,27 @@
-				@charset "UTF-8" ;
+@charset "UTF-8" ;
 
 * {
   margin:0;
   padding:0;
-  -webkit-box-sizing: border-box;
+  word-break: break-word;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  box-sizing: border-box;
-	word-break: break-word;
 }
 
 html {
-	width: 100%;
+	width: 100%;	
+	min-height: 100%;
+	position: absolute;
 }
 
 body {
 	width: 100%;
+	margin-bottom: 2em;
 	font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 	line-height: 1.8em;
+	background-color: #F2F1F0;	
 }
 
 p {
@@ -28,14 +32,83 @@ p {
 
 #header {
 	width: 100%;
-	background: rgba(192,192,192,.9);
+	background: #e8ecef;
+	background-color: #FBFBFB;
+	border-bottom: #5976BA solid 1px;
 }
 
 #wrapper {
 	width:1024px;
-	height: 100%;
-	margin: 0 auto;	
-	background-color:#999;
+	margin: 0 auto;
+}
+
+#contents-top {
+	width: 100%;
+	height: 350px;
+}
+
+#contents-top .title{
+	font-size: 35px;
+	text-align: center;
+	line-height: 1.5;
+	padding-top: 130px;
+}
+
+#contents-top .sub_title{
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+#contents-main {
+	width: 100%;
+	margin: 0 0 30px;
+}
+#contents-main .title{
+	font-size: 24px;
+	line-height: 100%;
+	border-left: #5976BA solid 3px;
+	border-bottom: #CCC solid 1px;
+	margin: 30px 0;
+}
+#contents-main .sub_title{
+	font-size: 18px;
+	line-height: 100%;
+	border-bottom: #5976BA solid 1px;
+	margin: 30px 0 5px;
+}
+
+#contents-menu {
+	padding: 25px 0 0;
+}
+
+#contents-menu li span.en {
+	display: none;
+}
+#contents-menu:hover li span.en {
+	display: inline;
+}
+#contents-menu li span.jp {
+	display: inline;
+}
+#contents-menu:hover li span.jp {
+	display: none;
+}
+
+#footer  {
+	width: 100%;
+	height: 2em;
+	position: absolute;
+	bottom: 0;
+	background-color: #FBFBFB;
+	border-top: #5976BA solid 1px;
+}
+
+#footer .inner {
+	width: 1024px;
+	margin: 0 auto;
+	font-size: 10px;
+	text-align: center;
 }
 
 @keyframes fadeIn {
