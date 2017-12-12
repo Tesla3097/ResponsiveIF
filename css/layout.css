@@ -62,7 +62,7 @@ p {
 
 #contents-main {
 	width: 100%;
-	margin: 0 0 30px;
+	padding: 0 0 30px;
 }
 #contents-main .title{
 	font-size: 24px;
@@ -114,6 +114,55 @@ p {
 @keyframes fadeIn {
 	0% {opacity: 0}
 	100% {opacity: 1}
+}
+
+
+
+
+input[type=text] {
+	width: 50%;
+	padding: 7px;
+  border: #CCC solid 1px;
+  border-radius: 3px;
+	-webkit-border-radius: 3px; /* Safari,Google Chrome用 */  
+	-moz-border-radius: 3px; /* Firefox用 */
+}
+
+.form_title {
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0px;
+	margin: 15px 0 0;
+}
+
+.square_btn {
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: solid 2px #67c5ff;
+	border-radius: 3px;
+	transition: .4s;
+}
+
+.square_btn:hover {
+	background: #67c5ff;
+	color: white;
+}
+
+input#submit_button {
+	// 幅と高さを指定
+	width: 150px;
+	height: 50px;
+	margin: 30px 0;
+	padding: 10px 30px;
+	color: #FFF;
+	background-color: #5976BA;
+	border: none;
+	display: block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px; /* Safari,Google Chrome用 */  
+	-moz-border-radius: 5px; /* Firefox用 */
 }
 
 
