@@ -60,6 +60,25 @@ p {
 	line-height: 1.5;
 }
 
+#contents {
+	
+}
+
+#contents .title{
+	font-size: 24px;
+	line-height: 100%;
+	border-left: #5976BA solid 3px;
+	border-bottom: #CCC solid 1px;
+	margin: 30px 0;
+}
+
+#contents .sub_title{
+	font-size: 18px;
+	line-height: 100%;
+	border-bottom: #5976BA solid 1px;
+	margin: 30px 0 30px;
+}
+
 #contents-main {
 	width: 100%;
 	padding: 0 0 30px;
@@ -118,44 +137,92 @@ p {
 
 
 
-
-input[type=text] {
-	width: 50%;
-	padding: 7px;
-  border: #CCC solid 1px;
-  border-radius: 3px;
-	-webkit-border-radius: 3px; /* Safari,Google Chrome用 */  
-	-moz-border-radius: 3px; /* Firefox用 */
+/* ====================================================
+フォームパーツ
+==================================================== */ 
+.form-style-1 {
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.form_title {
-	font-size: 14px;
-	line-height: 1.5em;
+.form-style-1 li {
+	display: block;
+	list-style: none;
+}
+
+.form-style-1 label{
+	margin: 0 0 3px 0;
 	padding: 0px;
-	margin: 15px 0 0;
+	display: block;
+	font-weight: bold;
 }
 
-.square_btn {
-	display: inline-block;
-	padding: 0.3em 1em;
-	text-decoration: none;
-	color: #67c5ff;
-	border: solid 2px #67c5ff;
-	border-radius: 3px;
-	transition: .4s;
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px 0px 20px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;  
 }
 
-.square_btn:hover {
-	background: #67c5ff;
-	color: white;
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
 }
 
-input#submit_button {
-	// 幅と高さを指定
-	width: 150px;
-	height: 50px;
-	margin: 30px 0;
-	padding: 10px 30px;
+.form-style-1 .field-divided{
+    width: 49%;
+}
+
+.form-style-1 .field-short{
+    width: 30%;
+}
+
+.form-style-1 .field-middle{
+    width: 60%;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+
+.form-style-1 .field-select{
+    width: 100%;
+}
+
+.form-style-1 .field-textarea{
+    height: 100px;
+}
+
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	width: 50%;
+	margin: 0 auto 30px;
+	padding: 8px;
 	color: #FFF;
 	background-color: #5976BA;
 	border: none;
@@ -165,6 +232,16 @@ input#submit_button {
 	-moz-border-radius: 5px; /* Firefox用 */
 }
 
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+.form-style-1 .required{
+	color:red;
+}
 
 
 

@@ -1,5 +1,39 @@
 @charset "UTF-8" ;
 
+#contents ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#contents ul li {
+  float: left;
+  list-style-type: none;
+}
+
+#contents ul.cols-1 li {
+  width: 100%;
+}
+
+#contents ul.cols-2 li {
+  width: 48%;
+	margin: 0 4% 0 0;
+}
+#contents ul.cols-2 li:nth-child(2n) {
+  margin: 0;	
+}
+
+#contents ul.cols-3 li {
+  width: 31.33333%;
+	margin: 0 3% 0 0;
+}
+#contents ul.cols-3 li:nth-child(3n) {
+  margin: 0;	
+}
+
+
+
+
 #contents-menu ul a {
   display: block;
 }
