@@ -1,33 +1,12 @@
 @charset "UTF-8" ;
 
-#header .inner {
-	position: relative;	
-	width: 1024px;
-	height: 80px;
-	margin: 0 auto;
-}
-
-#header.fixed .inner {
-	height: 40px;
-}
-
-#header .inner:after {
-	content: "";
-	clear: both;
-	display: block;
-}
+/*----------------------------------------
+ header
+-----------------------------------------*/
 
 #header a {
 	color: #000;
 	text-decoration: none;
-}
-
-#header.fixed {
-	position: fixed;
-	left: 0;
-	top: 0;
-	animation: fadeIn 2s ease 0s 1 normal;
-	z-index: 1;
 }
 
 #header .logo {
@@ -35,7 +14,6 @@
 	left: 0;
 	top: 5px;
 	float: left;
-	font-size: 24px;
 }
 
 #header .title {
@@ -46,11 +24,6 @@
 	line-height: 1;
 }
 
-#header.fixed .title {
-	font-size: 18px;
-	top: 5px;
-}
-
 #header .sub_title {
 	position: absolute;
 	left: 0;
@@ -59,41 +32,58 @@
 	line-height: 1;
 }
 
-#header.fixed .sub_title {
-	font-size: 12px;
-	top: 25px;
+/*----------------------------------------
+ header inner
+-----------------------------------------*/
+
+#header .inner {
+	position: relative;	
+	width: 1024px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#header .inner:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/*----------------------------------------
+ header fixed
+-----------------------------------------*/
+
+#header.fixed {
+	position: fixed;
+	height: 40px;
+	animation: fadeIn 2s ease 0s 1 normal;
+	z-index: 1;
 }
 
 #header.fixed .logo {
 	font-size: 24px;
 }
 
-#global-nav li ul{
-  visibility: hidden;
-  opacity: 0;
-  transition: 0s;
+#header.fixed .title {
+	font-size: 18px;
+	top: 5px;
 }
-#global-nav li:hover ul{
-  visibility: visible;
-  opacity: 1;
+
+#header.fixed .sub_title {
+	font-size: 12px;
+	top: 25px;
 }
-#global-nav li ul li a{
-  visibility: hidden;
-  opacity: 0;
-  transition: .5s;
-}
-#global-nav li:hover ul li a{
-  visibility: visible;
-  opacity: 1;
-}
+
+/*----------------------------------------
+ global nav parent
+-----------------------------------------*/
 
 #global-nav ul {
 	position: absolute;
 	right: 0;
-	bottom: 5px;
+	bottom: 0;
 	list-style: none;
 }
-
 
 #global-nav ul li {
 	position: relative;
@@ -103,9 +93,6 @@
 	float: left;
 	border-right: #CCC solid 1px;
 	line-height: 2em;
-}
-#global-nav ul li:last-child {
-	border-right: none;
 }
 
 #global-nav ul li a{
@@ -117,49 +104,51 @@
 	background-color: #CCC;
 }
 
+#global-nav ul li:last-child {
+	border-right: none;
+}
+
+/*----------------------------------------
+ global nav children
+-----------------------------------------*/
 
 #global-nav ul li ul{
+	visibility: hidden;
 	position: absolute;
   z-index: 9999;
   top: 100%;
   left: 0;
-  margin: 0;
-  padding: 0;
 }
 
-#global-nav ul li ul li {
+#global-nav ul li:hover ul li{
+	visibility: visible;
 	width: 400px;
+	text-align: left;
 	border-right: none;
+	background-color: #FFF;
+	animation: fadeIn 1s ease 0s 1 normal;
 }
 
 #global-nav ul li ul li a{
 	padding: 5px 10px;
-	background-color: #FFF;
-	text-align: left;
 	line-height: 1.2em;
 }
 
+/*----------------------------------------
+ Toggle Button
+-----------------------------------------*/
 
-
-
-
-
-#header.fixed #global-nav ul li a {
-	font-size: 14px;
-}
-
-/* Toggle Button */
 #nav-toggle {
 	position: absolute;
 	right: 12px;
-	top: 2px;
+	top: 8px;
 	border-radius: 50%;
 	width: 36px;
 	height: 36px;
 	display: none;
 	cursor: pointer;
 	z-index: 101;
-	background-color: #eb6101;
+	background-color: #5976BA;
 }
 
 #nav-toggle span {
