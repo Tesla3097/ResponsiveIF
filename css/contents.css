@@ -1,55 +1,164 @@
 @charset "UTF-8" ;
 
+/*----------------------------------------
+ contents
+-----------------------------------------*/
+
 #contents {
 	
 }
 
-#contents .title{
+#contents .title {
+	margin: 30px 0;
+	padding: 5px 0 0 8px;
 	font-size: 24px;
 	line-height: 100%;
 	border-left: #5976BA solid 3px;
 	border-bottom: #CCC solid 1px;
-	margin: 30px 0;
 }
 
-#contents .sub_title{
+#contents .sub_title {
+	margin: 30px 0 10px;
+	padding: 0 0 0 3px;
 	font-size: 18px;
 	line-height: 100%;
 	border-bottom: #5976BA solid 1px;
-	margin: 30px 0 30px;
 }
+
+#contents ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#contents ul li {
+  float: left;
+  list-style-type: none;
+}
+
+#contents ul.cols-1 li {
+  width: 100%;
+}
+
+#contents ul.cols-2 li {
+  width: 48%;
+	margin: 0 4% 0 0;
+}
+
+#contents ul.cols-2 li:nth-child(2n) {
+  margin: 0;	
+}
+
+#contents ul.cols-3 li {
+  width: 31.33333%;
+	margin: 0 3% 0 0;
+}
+
+#contents ul.cols-3 li:nth-child(3n) {
+  margin: 0;	
+}
+
+/*----------------------------------------
+ contents-top
+-----------------------------------------*/
 
 #contents-top {
 	width: 100%;
 	height: 350px;
 }
 
-#contents-top .title{
+#contents-top .title {
 	font-size: 35px;
 	text-align: center;
 	line-height: 1.5;
 	padding: 130px 0 0;
 }
 
-#contents-top .sub_title{
+#contents-top .sub_title {
 	font-size: 20px;
 	text-align: center;
 	line-height: 1.5;
 }
 
+/*----------------------------------------
+ contents-menu
+-----------------------------------------*/
+
 #contents-menu {
 	padding: 25px 0 0;
 }
 
-#contents-menu li span.en {
-	display: none;
+#contents-menu ul a {
+  display: block;
 }
-#contents-menu:hover li span.en {
-	display: inline;
+
+#contents-menu ul:after {
+  content: "";
+  clear: both;
+  display: block;
 }
-#contents-menu li span.jp {
-	display: inline;
+
+#contents-menu ul li {
+	height: 300px;
+	background-color: #FFF;
+  float: left;
+  list-style-type: none;
+	transition: .8s;
+	border-radius: 0px;
+	-webkit-border-radius: 0px; /* Safari,Google Chrome用 */  
+	-moz-border-radius: 0px; /* Firefox用 */  
 }
-#contents-menu:hover li span.jp {
-	display: none;
+
+#contents-menu ul li:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#contents-menu ul li img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	opacity: 1;
+}
+
+#contents-menu ul li:hover img {
+	opacity: .5;
+}
+
+#contents-menu ul li a {
+	height: 300px;
+	padding: 8px;
+	text-decoration: none;
+	display: block;
+}
+
+#contents-menu ul.cols-1 li {
+  width: 100%;
+	margin: 0 0 20px;
+}
+
+#contents-menu ul.cols-2 li {
+  width: 48%;
+	margin: 0 4% 20px 0;
+}
+
+#contents-menu ul.cols-2 li:nth-child(2n) {
+  margin: 0 0 20px;	
+}
+
+#contents-menu ul.cols-3 li {
+  width: 31.33333%;
+	margin: 0 3% 20px 0;
+}
+
+#contents-menu ul.cols-3 li:nth-child(3n) {
+  margin: 0 0 20px;	
+}
+
+#contents-menu ul.cols-4 li {
+  width: 23.5%;
+	margin: 0 2% 20px 0;
+}
+
+#contents-menu ul.cols-4 li:nth-child(4n) {
+	margin: 0 0 20px;
 }
