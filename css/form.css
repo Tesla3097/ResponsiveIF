@@ -14,11 +14,19 @@
 }
 
 .form_style01 label{
-	margin: 0 0 3px 0;
+	margin: 10px 0 0;
 	padding: 0px;
 	display: block;
 	font-weight: bold;
 }
+
+.form_style01 .note{
+	margin: 5px 0 0;
+	font-size: 12px;
+	display: block;
+	line-height: 1.3em;
+}
+
 
 .form_style01 input[type=text], 
 .form_style01 input[type=date],
@@ -35,7 +43,7 @@ select{
 	-moz-box-sizing: border-box;
 	border:1px solid #BEBEBE;
 	padding: 7px;
-	margin:0px 0px 20px;
+	margin: 5px 0 0;
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
@@ -86,7 +94,7 @@ select{
 .form_style01 input[type=submit], 
 .form_style01 input[type=button]{
 	width: 50%;
-	margin: 0 auto 30px;
+	margin: 20px auto 0;
 	padding: 8px;
 	color: #FFF;
 	background-color: #5976BA;

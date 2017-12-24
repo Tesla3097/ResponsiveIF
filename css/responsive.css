@@ -8,8 +8,8 @@
 
 	#wrapper {
 		width: 100%;
-		margin:0 auto;	
-		padding: 10px;
+		margin: 0 auto;	
+		padding: 0 10px;
 	}
 
 /*----------------------------------------
@@ -56,14 +56,12 @@
 	
 	#contents .title{
 		font-size: 21px;
-		margin: 8px 0;
 		padding: 3px 0  0 5px;
 	}
 	
 	#contents .sub_title{
 		font-size: 18px;
 		margin: 20px 0 0;
-		padding: 0 10px;
 	}
 		
 	#contents-top {
