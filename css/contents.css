@@ -20,6 +20,35 @@
 	border-bottom: #5976BA solid 1px;
 }
 
+#contents .introduction {
+	padding: 0 0 0 3px;
+	margin: 20px 0 0;
+	font-size: 18px;
+	color: #5976BA;
+	line-height: 100%;
+}
+
+#contents .table-of-contents {
+	padding: 0 0 0 3px;
+	margin: 20px 0 5px 0;
+	font-size: 18px;
+	line-height: 100%;
+	border-bottom: #5976BA solid 1px;
+}
+
+#contents .chapter {
+	padding: 0 0 0 3px;
+	margin: 20px 5px 5px;
+	font-size: 16px;
+	line-height: 100%;
+	border-bottom: #CCC solid 1px;
+}
+
+#contents .section {
+	font-size: 16px;
+	color: #5976BA
+}
+
 /*----------------------------------------
  contents-top
 -----------------------------------------*/
@@ -115,4 +144,31 @@ ul.cols-4 li {
 
 ul.cols-4 li:nth-child(4n) {
 	margin: 0;
+}
+
+/*----------------------------------------
+ table
+-----------------------------------------*/
+
+.table-scroll {
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+th,td{
+	border: solid 1px #ccc;
+	padding: 8px;
+	white-space: nowrap;
+}
+
+th{
+	background: #aaa;
+	color: #fff;
 }
