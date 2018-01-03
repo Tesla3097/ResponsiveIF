@@ -193,6 +193,21 @@
 /* ====================================================
  form
 ==================================================== */
+
+	.form_style01 input[type=text], 
+	.form_style01 input[type=date],
+	.form_style01 input[type=datetime],
+	.form_style01 input[type=number],
+	.form_style01 input[type=search],
+	.form_style01 input[type=time],
+	.form_style01 input[type=url],
+	.form_style01 input[type=email],
+	textarea, 
+	select{
+		-webkit-appearance: none;
+		font-size: 16px;
+		transform: scale(1);
+	}
 	
 	.form_style01 input[type=submit], 
 	.form_style01 input[type=button]{

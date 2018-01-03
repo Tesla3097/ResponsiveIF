@@ -158,6 +158,16 @@ ul.cols-4 li:nth-child(4n) {
 	-webkit-overflow-scrolling: touch;
 }
 
+.table-scroll::-webkit-scrollbar {
+	height: 8px; /* スクロールバーの高さ */
+}
+.table-scroll::-webkit-scrollbar-thumb {
+	background: #aaa; /* スクロールバーの色 */
+}
+.table-scroll::-webkit-scrollbar-track {
+	background: #ccc; /* スクロールバーの背景色 */
+}
+
 table{
 	border-collapse: collapse;
 }
